@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package>
+  <metadata>
+    <id>Telerik.Sitefinity.CognitiveServices</id>
+    <version>1.0.0.0</version>
+    <title>Telerik.Sitefinity.CognitiveServices</title>
+    <authors>Sitefinity</authors>
+    <owners>Sitefinity</owners>
+    <language>en-US</language>
+    <iconUrl>https://nuget.org/Content/Images/packageDefaultIcon-50x50.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Telerik.Sitefinity.CognitiveServices</description>
+    <references></references>
+    <dependencies>
+      <dependency id="Telerik.Sitefinity.Core" version="11.0.6700" />
+      <dependency id="Aylien.TextApi" version="1.12.0.0" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="..\..\..\..\App_Data\Sitefinity\Export\CognitiveServices\**\*.*" exclude="..\..\..\..\App_Data\Sitefinity\Export\CognitiveServices\**\*.ps1" target="content\App_Data\Sitefinity\AddOns\CognitiveServices" />
+    <file src="..\..\..\..\App_Data\Sitefinity\Export\CognitiveServices\**\*.ps1" target="tools" />
+    <file src="..\..\..\..\App_Data\Sitefinity\Export\CognitiveServices\**\*.psm1" target="tools" />
+    <file src="..\..\..\..\bin\Telerik.Sitefinity.CognitiveServices.dll" target="lib\net471" />
+  </files>
+</package>
