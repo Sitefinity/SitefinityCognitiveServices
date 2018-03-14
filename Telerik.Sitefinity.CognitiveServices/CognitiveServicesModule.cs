@@ -62,19 +62,20 @@ namespace Telerik.Sitefinity.CognitiveServices
                 var configManager = ConfigManager.GetManager();
                 configManager.Provider.Executed += this.ConfigEventHandler;
 
-                this.defaultApiRoute = RouteTable.Routes.MapHttpRoute(
+                if (this.defaultApiRoute == null || (this.defaultApiRoute != null && !RouteTable.Routes.Contains(this.defaultApiRoute)))
+                {
+                    this.defaultApiRoute = RouteTable.Routes.MapHttpRoute(
                         name: "DefaultApi",
                         routeTemplate: "webapi/{controller}/{action}/{id}",
                         defaults: new { id = RouteParameter.Optional });
+                }
 
                 if (!this.IsCustomLibrariesProviderRegistered())
                 {
                     this.RegisterCustomLibrariesProvider();
+                    SystemManager.RestartApplication("Restart to enable custom libraries provider", SystemRestartFlags.Default, true);
                 }
-            }
 
-            if (e.CommandName == "RegisterRoutes")
-            {
                 if (this.ModuleHasRequiredSettings())
                 {
                     var imageHandler = ObjectFactory.Container.Resolve<ImageHandler>();
@@ -185,11 +186,6 @@ namespace Telerik.Sitefinity.CognitiveServices
 
             this.DisposeSingletonInstances();
 
-            if (this.IsCustomLibrariesProviderRegistered())
-            {
-                this.UnregisterCustomLibrariesProvider();
-            }
-
             base.Unload();
         }
 
@@ -208,6 +204,7 @@ namespace Telerik.Sitefinity.CognitiveServices
             if (this.IsCustomLibrariesProviderRegistered())
             {
                 this.UnregisterCustomLibrariesProvider();
+                SystemManager.RestartApplication("Restart to disable custom libraries provider", SystemRestartFlags.Default, true);
             }
 
             base.Uninstall(initializer);
