@@ -292,3 +292,6 @@ __pycache__/
 Sitefinity.lic
 Sitefinity-MultiSite.lic
 Sitefinity-SingleSite.lic
+
+# Sitefinity configs
+**/App_Data/Sitefinity/Configuration/*
