@@ -30,5 +30,31 @@ namespace Telerik.Sitefinity.CognitiveServices.Configuration
                 this["azureComputerVisionApiServiceUriBase"] = value;
             }
         }
+
+        [ConfigurationProperty("aylienAppId")]
+        public string AylienAppId
+        {
+            get
+            {
+                return (string)this["aylienAppId"];
+            }
+            set
+            {
+                this["aylienAppId"] = value;
+            }
+        }
+
+        [ConfigurationProperty("aylienAppKey")]
+        public string AylienAppKey
+        {
+            get
+            {
+                return (string)this["aylienAppKey"];
+            }
+            set
+            {
+                this["aylienAppKey"] = value;
+            }
+        }
     }
 }

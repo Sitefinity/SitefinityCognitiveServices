@@ -1,6 +1,8 @@
 ﻿using Aylien.TextApi;
 using System.Web.Http;
+using Telerik.Sitefinity.CognitiveServices.Configuration;
 using Telerik.Sitefinity.CognitiveServices.Web.Services.DTO;
+using Telerik.Sitefinity.Configuration;
 
 namespace Telerik.Sitefinity.CognitiveServices.Web.Services.Controllers
 {
@@ -8,12 +10,14 @@ namespace Telerik.Sitefinity.CognitiveServices.Web.Services.Controllers
     {
         private readonly Client textAnalize;
 
-        private const string AppId = "9bb3fe6e";
-        private const string AppKey = "07b4a1456a3625ad55341126fc22f906";
-
         public CognitiveServicesController()
+            : this(Config.Get<CognitiveServicesConfig>())
         {
-            this.textAnalize = new Client(CognitiveServicesController.AppId, CognitiveServicesController.AppKey);
+        }
+
+        public CognitiveServicesController(CognitiveServicesConfig config)
+        {
+            this.textAnalize = new Client(config.AylienAppId, config.AylienAppKey);
         }
 
         [HttpPost]
