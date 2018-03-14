@@ -62,9 +62,9 @@ namespace Telerik.Sitefinity.CognitiveServices
                 var configManager = ConfigManager.GetManager();
                 configManager.Provider.Executed += this.ConfigEventHandler;
 
-                if (this.defaultApiRoute == null || (this.defaultApiRoute != null && !RouteTable.Routes.Contains(this.defaultApiRoute)))
+                if (defaultApiRoute == null)
                 {
-                    this.defaultApiRoute = RouteTable.Routes.MapHttpRoute(
+                    defaultApiRoute = RouteTable.Routes.MapHttpRoute(
                         name: "DefaultApi",
                         routeTemplate: "webapi/{controller}/{action}/{id}",
                         defaults: new { id = RouteParameter.Optional });
@@ -182,7 +182,7 @@ namespace Telerik.Sitefinity.CognitiveServices
         /// <inheritdoc />
         public override void Unload()
         {
-            RouteTable.Routes.Remove(this.defaultApiRoute);
+            RouteTable.Routes.Remove(defaultApiRoute);
 
             this.DisposeSingletonInstances();
 
@@ -197,7 +197,7 @@ namespace Telerik.Sitefinity.CognitiveServices
 
         public override void Uninstall(SiteInitializer initializer)
         {
-            RouteTable.Routes.Remove(this.defaultApiRoute);
+            RouteTable.Routes.Remove(defaultApiRoute);
 
             this.DisposeSingletonInstances();
 
@@ -247,6 +247,6 @@ namespace Telerik.Sitefinity.CognitiveServices
 
         private IList<ContainerControlledLifetimeManager> containerControlledLifetimeManagers = new List<ContainerControlledLifetimeManager>();
 
-        private Route defaultApiRoute = null;
+        private static Route defaultApiRoute = null;
     }
 }
