@@ -15,6 +15,7 @@
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
     <EnhancerAssembly>$(SolutionDir)\packages\Telerik.DataAccess.Fluent.2016.2.822.1\tools\enhancer\enhancer.exe</EnhancerAssembly>
+    <Use64BitIISExpress />
   </PropertyGroup>
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
@@ -330,23 +331,23 @@
     <Reference Include="RedDog.Search, Version=0.5.3.0, Culture=neutral, PublicKeyToken=b28c218413bdf563, processorArchitecture=MSIL">
       <HintPath>..\packages\Sitefinity.RedDog.Search.0.5.3.0\lib\net40\RedDog.Search.dll</HintPath>
     </Reference>
-    <Reference Include="ServiceStack, Version=4.0.0.0, Culture=neutral, PublicKeyToken=e06fbc6124f57c43, processorArchitecture=MSIL">
-      <HintPath>..\packages\ServiceStack.Signed.4.5.14\lib\net45\ServiceStack.dll</HintPath>
+    <Reference Include="ServiceStack, Version=5.0.0.0, Culture=neutral, PublicKeyToken=02c12cbda47e6587, processorArchitecture=MSIL">
+      <HintPath>..\packages\ServiceStack.5.0.2\lib\net45\ServiceStack.dll</HintPath>
     </Reference>
-    <Reference Include="ServiceStack.Client, Version=4.0.0.0, Culture=neutral, PublicKeyToken=e06fbc6124f57c43, processorArchitecture=MSIL">
-      <HintPath>..\packages\ServiceStack.Client.Signed.4.5.14\lib\net45\ServiceStack.Client.dll</HintPath>
+    <Reference Include="ServiceStack.Client, Version=5.0.0.0, Culture=neutral, PublicKeyToken=02c12cbda47e6587, processorArchitecture=MSIL">
+      <HintPath>..\packages\ServiceStack.Client.5.0.2\lib\net45\ServiceStack.Client.dll</HintPath>
     </Reference>
-    <Reference Include="ServiceStack.Common, Version=4.0.0.0, Culture=neutral, PublicKeyToken=e06fbc6124f57c43, processorArchitecture=MSIL">
-      <HintPath>..\packages\ServiceStack.Common.Signed.4.5.14\lib\net45\ServiceStack.Common.dll</HintPath>
+    <Reference Include="ServiceStack.Common, Version=5.0.0.0, Culture=neutral, PublicKeyToken=02c12cbda47e6587, processorArchitecture=MSIL">
+      <HintPath>..\packages\ServiceStack.Common.5.0.2\lib\net45\ServiceStack.Common.dll</HintPath>
     </Reference>
-    <Reference Include="ServiceStack.Interfaces, Version=4.0.0.0, Culture=neutral, PublicKeyToken=e06fbc6124f57c43, processorArchitecture=MSIL">
-      <HintPath>..\packages\ServiceStack.Interfaces.4.5.14\lib\portable-wp80+sl5+net45+win8+wpa81+monotouch+monoandroid+xamarin.ios10\ServiceStack.Interfaces.dll</HintPath>
+    <Reference Include="ServiceStack.Interfaces, Version=5.0.0.0, Culture=neutral, PublicKeyToken=02c12cbda47e6587, processorArchitecture=MSIL">
+      <HintPath>..\packages\ServiceStack.Interfaces.5.0.2\lib\net45\ServiceStack.Interfaces.dll</HintPath>
     </Reference>
-    <Reference Include="ServiceStack.Redis, Version=4.0.0.0, Culture=neutral, PublicKeyToken=e06fbc6124f57c43, processorArchitecture=MSIL">
-      <HintPath>..\packages\ServiceStack.Redis.Signed.4.5.14\lib\net45\ServiceStack.Redis.dll</HintPath>
+    <Reference Include="ServiceStack.Redis, Version=5.0.0.0, Culture=neutral, PublicKeyToken=02c12cbda47e6587, processorArchitecture=MSIL">
+      <HintPath>..\packages\ServiceStack.Redis.5.0.2\lib\net45\ServiceStack.Redis.dll</HintPath>
     </Reference>
-    <Reference Include="ServiceStack.Text, Version=4.0.0.0, Culture=neutral, PublicKeyToken=e06fbc6124f57c43, processorArchitecture=MSIL">
-      <HintPath>..\packages\ServiceStack.Text.Signed.4.5.14\lib\net45\ServiceStack.Text.dll</HintPath>
+    <Reference Include="ServiceStack.Text, Version=5.0.0.0, Culture=neutral, PublicKeyToken=02c12cbda47e6587, processorArchitecture=MSIL">
+      <HintPath>..\packages\ServiceStack.Text.5.0.2\lib\net45\ServiceStack.Text.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Activities" />
@@ -709,44 +710,44 @@
     <Reference Include="Telerik.Sitefinity.WebSecurity, Version=11.0.6700.0, Culture=neutral, PublicKeyToken=b28c218413bdf563, processorArchitecture=MSIL">
       <HintPath>..\packages\Progress.Sitefinity.WebSecurity.11.0.6700\lib\net471\Telerik.Sitefinity.WebSecurity.dll</HintPath>
     </Reference>
-    <Reference Include="Telerik.Web.Design, Version=2017.3.913.40, Culture=neutral, PublicKeyToken=121fae78165ba3d4, processorArchitecture=MSIL">
-      <HintPath>..\packages\Telerik.Web.UI.2017.3.913.40\lib\net40\Telerik.Web.Design.dll</HintPath>
+    <Reference Include="Telerik.Web.Design, Version=2018.1.117.40, Culture=neutral, PublicKeyToken=121fae78165ba3d4, processorArchitecture=MSIL">
+      <HintPath>..\packages\Telerik.Web.UI.2018.1.117.40\lib\net40\Telerik.Web.Design.dll</HintPath>
     </Reference>
-    <Reference Include="Telerik.Web.UI, Version=2017.3.913.40, Culture=neutral, PublicKeyToken=121fae78165ba3d4, processorArchitecture=MSIL">
-      <HintPath>..\packages\Telerik.Web.UI.2017.3.913.40\lib\net40\Telerik.Web.UI.dll</HintPath>
+    <Reference Include="Telerik.Web.UI, Version=2018.1.117.40, Culture=neutral, PublicKeyToken=121fae78165ba3d4, processorArchitecture=MSIL">
+      <HintPath>..\packages\Telerik.Web.UI.2018.1.117.40\lib\net40\Telerik.Web.UI.dll</HintPath>
     </Reference>
-    <Reference Include="Telerik.Web.UI.Skins, Version=2017.3.913.40, Culture=neutral, PublicKeyToken=121fae78165ba3d4, processorArchitecture=MSIL">
-      <HintPath>..\packages\Telerik.Web.UI.2017.3.913.40\lib\net40\Telerik.Web.UI.Skins.dll</HintPath>
+    <Reference Include="Telerik.Web.UI.Skins, Version=2018.1.117.40, Culture=neutral, PublicKeyToken=121fae78165ba3d4, processorArchitecture=MSIL">
+      <HintPath>..\packages\Telerik.Web.UI.2018.1.117.40\lib\net40\Telerik.Web.UI.Skins.dll</HintPath>
     </Reference>
-    <Reference Include="Telerik.Windows.Controls, Version=2017.3.913.40, Culture=neutral, PublicKeyToken=5803cfa389c90ce7, processorArchitecture=MSIL">
-      <HintPath>..\packages\Telerik.Windows.Controls.2017.3.913.40\lib\net40\Telerik.Windows.Controls.dll</HintPath>
+    <Reference Include="Telerik.Windows.Controls, Version=2018.1.122.45, Culture=neutral, PublicKeyToken=5803cfa389c90ce7, processorArchitecture=MSIL">
+      <HintPath>..\packages\Telerik.Windows.Controls.2018.1.122.45\lib\net45\Telerik.Windows.Controls.dll</HintPath>
     </Reference>
-    <Reference Include="Telerik.Windows.Data, Version=2017.3.913.40, Culture=neutral, PublicKeyToken=5803cfa389c90ce7, processorArchitecture=MSIL">
-      <HintPath>..\packages\Telerik.Windows.Data.2017.3.913.40\lib\net40\Telerik.Windows.Data.dll</HintPath>
+    <Reference Include="Telerik.Windows.Data, Version=2018.1.122.45, Culture=neutral, PublicKeyToken=5803cfa389c90ce7, processorArchitecture=MSIL">
+      <HintPath>..\packages\Telerik.Windows.Data.2018.1.122.45\lib\net45\Telerik.Windows.Data.dll</HintPath>
     </Reference>
-    <Reference Include="Telerik.Windows.Documents, Version=2017.3.913.40, Culture=neutral, PublicKeyToken=5803cfa389c90ce7, processorArchitecture=MSIL">
-      <HintPath>..\packages\Telerik.Windows.Documents.2017.3.913.40\lib\net40\Telerik.Windows.Documents.dll</HintPath>
+    <Reference Include="Telerik.Windows.Documents, Version=2018.1.122.45, Culture=neutral, PublicKeyToken=5803cfa389c90ce7, processorArchitecture=MSIL">
+      <HintPath>..\packages\Telerik.Windows.Documents.2018.1.122.45\lib\net45\Telerik.Windows.Documents.dll</HintPath>
     </Reference>
-    <Reference Include="Telerik.Windows.Documents.Core, Version=2017.3.907.40, Culture=neutral, PublicKeyToken=5803cfa389c90ce7, processorArchitecture=MSIL">
-      <HintPath>..\packages\Telerik.Windows.Documents.Core.2017.3.907.40\lib\net40\Telerik.Windows.Documents.Core.dll</HintPath>
+    <Reference Include="Telerik.Windows.Documents.Core, Version=2018.1.112.40, Culture=neutral, PublicKeyToken=5803cfa389c90ce7, processorArchitecture=MSIL">
+      <HintPath>..\packages\Telerik.Windows.Documents.Core.2018.1.122.45\lib\net45\Telerik.Windows.Documents.Core.dll</HintPath>
     </Reference>
-    <Reference Include="Telerik.Windows.Documents.Fixed, Version=2017.3.907.40, Culture=neutral, PublicKeyToken=5803cfa389c90ce7, processorArchitecture=MSIL">
-      <HintPath>..\packages\Telerik.Windows.Documents.Fixed.2017.3.907.40\lib\net40\Telerik.Windows.Documents.Fixed.dll</HintPath>
+    <Reference Include="Telerik.Windows.Documents.Fixed, Version=2018.1.112.40, Culture=neutral, PublicKeyToken=5803cfa389c90ce7, processorArchitecture=MSIL">
+      <HintPath>..\packages\Telerik.Windows.Documents.Fixed.2018.1.122.45\lib\net45\Telerik.Windows.Documents.Fixed.dll</HintPath>
     </Reference>
-    <Reference Include="Telerik.Windows.Documents.Flow, Version=2017.3.907.40, Culture=neutral, PublicKeyToken=5803cfa389c90ce7, processorArchitecture=MSIL">
-      <HintPath>..\packages\Telerik.Windows.Documents.Flow.2017.3.907.40\lib\net40\Telerik.Windows.Documents.Flow.dll</HintPath>
+    <Reference Include="Telerik.Windows.Documents.Flow, Version=2018.1.112.40, Culture=neutral, PublicKeyToken=5803cfa389c90ce7, processorArchitecture=MSIL">
+      <HintPath>..\packages\Telerik.Windows.Documents.Flow.2018.1.122.45\lib\net45\Telerik.Windows.Documents.Flow.dll</HintPath>
     </Reference>
-    <Reference Include="Telerik.Windows.Documents.FormatProviders.Html, Version=2017.3.913.40, Culture=neutral, PublicKeyToken=5803cfa389c90ce7, processorArchitecture=MSIL">
-      <HintPath>..\packages\Telerik.Windows.Documents.FormatProviders.Html.2017.3.913.40\lib\net40\Telerik.Windows.Documents.FormatProviders.Html.dll</HintPath>
+    <Reference Include="Telerik.Windows.Documents.FormatProviders.Html, Version=2018.1.122.45, Culture=neutral, PublicKeyToken=5803cfa389c90ce7, processorArchitecture=MSIL">
+      <HintPath>..\packages\Telerik.Windows.Documents.FormatProviders.Html.2018.1.122.45\lib\net45\Telerik.Windows.Documents.FormatProviders.Html.dll</HintPath>
     </Reference>
-    <Reference Include="Telerik.Windows.Documents.FormatProviders.OpenXml, Version=2017.3.913.40, Culture=neutral, PublicKeyToken=5803cfa389c90ce7, processorArchitecture=MSIL">
-      <HintPath>..\packages\Telerik.Windows.Documents.FormatProviders.OpenXml.2017.3.913.40\lib\net40\Telerik.Windows.Documents.FormatProviders.OpenXml.dll</HintPath>
+    <Reference Include="Telerik.Windows.Documents.FormatProviders.OpenXml, Version=2018.1.122.45, Culture=neutral, PublicKeyToken=5803cfa389c90ce7, processorArchitecture=MSIL">
+      <HintPath>..\packages\Telerik.Windows.Documents.FormatProviders.OpenXml.2018.1.122.45\lib\net45\Telerik.Windows.Documents.FormatProviders.OpenXml.dll</HintPath>
     </Reference>
-    <Reference Include="Telerik.Windows.Documents.FormatProviders.Rtf, Version=2017.3.913.40, Culture=neutral, PublicKeyToken=5803cfa389c90ce7, processorArchitecture=MSIL">
-      <HintPath>..\packages\Telerik.Windows.Documents.FormatProviders.Rtf.2017.3.913.40\lib\net40\Telerik.Windows.Documents.FormatProviders.Rtf.dll</HintPath>
+    <Reference Include="Telerik.Windows.Documents.FormatProviders.Rtf, Version=2018.1.122.45, Culture=neutral, PublicKeyToken=5803cfa389c90ce7, processorArchitecture=MSIL">
+      <HintPath>..\packages\Telerik.Windows.Documents.FormatProviders.Rtf.2018.1.122.45\lib\net45\Telerik.Windows.Documents.FormatProviders.Rtf.dll</HintPath>
     </Reference>
-    <Reference Include="Telerik.Windows.Zip, Version=2017.3.907.40, Culture=neutral, PublicKeyToken=5803cfa389c90ce7, processorArchitecture=MSIL">
-      <HintPath>..\packages\Telerik.Windows.Zip.2017.3.913.40\lib\net40\Telerik.Windows.Zip.dll</HintPath>
+    <Reference Include="Telerik.Windows.Zip, Version=2018.1.112.40, Culture=neutral, PublicKeyToken=5803cfa389c90ce7, processorArchitecture=MSIL">
+      <HintPath>..\packages\Telerik.Windows.Zip.2018.1.122.45\lib\net45\Telerik.Windows.Zip.dll</HintPath>
     </Reference>
     <Reference Include="Twitterizer2, Version=2.4.1.27318, Culture=neutral, PublicKeyToken=69d1469eac671567, processorArchitecture=MSIL">
       <HintPath>..\packages\Telerik.Sitefinity.Twitterizer.2.4.1\lib\net40\Twitterizer2.dll</HintPath>
@@ -775,7 +776,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="AdminApp\app.2a3ffe340239e563fc7a.bundle.js" />
+    <Content Include="AdminApp\app.540ec773dc10757e7231.bundle.js" />
     <Content Include="AdminApp\assets\icons\apple-touch-icon-114x114.png" />
     <Content Include="AdminApp\assets\icons\apple-touch-icon-120x120.png" />
     <Content Include="AdminApp\assets\icons\apple-touch-icon-144x144.png" />
@@ -793,33 +794,61 @@
     <Content Include="AdminApp\assets\icons\mstile-150x150.png" />
     <Content Include="AdminApp\assets\icons\mstile-310x310.png" />
     <Content Include="AdminApp\assets\icons\mstile-70x70.png" />
+    <Content Include="AdminApp\assets\js\angular-tree-component\CHANGELOG.md" />
     <Content Include="AdminApp\assets\js\angular-tree-component\dist\angular-tree-component.css" />
     <Content Include="AdminApp\assets\js\angular-tree-component\dist\angular-tree-component.js" />
+    <Content Include="AdminApp\assets\js\angular-tree-component\dist\angular-tree-component.metadata.json" />
     <Content Include="AdminApp\assets\js\angular-tree-component\dist\angular-tree-component.umd.js" />
+    <Content Include="AdminApp\assets\js\angular-tree-component\dist\angular-tree-component.umd.js.map" />
     <Content Include="AdminApp\assets\js\angular-tree-component\dist\components\loading.component.js" />
+    <Content Include="AdminApp\assets\js\angular-tree-component\dist\components\loading.component.metadata.json" />
     <Content Include="AdminApp\assets\js\angular-tree-component\dist\components\tree-node-checkbox.component.js" />
+    <Content Include="AdminApp\assets\js\angular-tree-component\dist\components\tree-node-checkbox.component.metadata.json" />
     <Content Include="AdminApp\assets\js\angular-tree-component\dist\components\tree-node-children.component.js" />
+    <Content Include="AdminApp\assets\js\angular-tree-component\dist\components\tree-node-children.component.metadata.json" />
     <Content Include="AdminApp\assets\js\angular-tree-component\dist\components\tree-node-collection.component.js" />
+    <Content Include="AdminApp\assets\js\angular-tree-component\dist\components\tree-node-collection.component.metadata.json" />
     <Content Include="AdminApp\assets\js\angular-tree-component\dist\components\tree-node-content.component.js" />
+    <Content Include="AdminApp\assets\js\angular-tree-component\dist\components\tree-node-content.component.metadata.json" />
     <Content Include="AdminApp\assets\js\angular-tree-component\dist\components\tree-node-drop-slot.component.js" />
+    <Content Include="AdminApp\assets\js\angular-tree-component\dist\components\tree-node-drop-slot.component.metadata.json" />
     <Content Include="AdminApp\assets\js\angular-tree-component\dist\components\tree-node-expander.component.js" />
+    <Content Include="AdminApp\assets\js\angular-tree-component\dist\components\tree-node-expander.component.metadata.json" />
     <Content Include="AdminApp\assets\js\angular-tree-component\dist\components\tree-node-wrapper.component.js" />
+    <Content Include="AdminApp\assets\js\angular-tree-component\dist\components\tree-node-wrapper.component.metadata.json" />
     <Content Include="AdminApp\assets\js\angular-tree-component\dist\components\tree-node.component.js" />
+    <Content Include="AdminApp\assets\js\angular-tree-component\dist\components\tree-node.component.metadata.json" />
     <Content Include="AdminApp\assets\js\angular-tree-component\dist\components\tree-viewport.component.js" />
+    <Content Include="AdminApp\assets\js\angular-tree-component\dist\components\tree-viewport.component.metadata.json" />
     <Content Include="AdminApp\assets\js\angular-tree-component\dist\components\tree.component.js" />
+    <Content Include="AdminApp\assets\js\angular-tree-component\dist\components\tree.component.metadata.json" />
     <Content Include="AdminApp\assets\js\angular-tree-component\dist\constants\events.js" />
+    <Content Include="AdminApp\assets\js\angular-tree-component\dist\constants\events.metadata.json" />
     <Content Include="AdminApp\assets\js\angular-tree-component\dist\constants\keys.js" />
+    <Content Include="AdminApp\assets\js\angular-tree-component\dist\constants\keys.metadata.json" />
     <Content Include="AdminApp\assets\js\angular-tree-component\dist\defs\api.js" />
+    <Content Include="AdminApp\assets\js\angular-tree-component\dist\defs\api.metadata.json" />
     <Content Include="AdminApp\assets\js\angular-tree-component\dist\directives\tree-animate-open.directive.js" />
+    <Content Include="AdminApp\assets\js\angular-tree-component\dist\directives\tree-animate-open.directive.metadata.json" />
     <Content Include="AdminApp\assets\js\angular-tree-component\dist\directives\tree-drag.directive.js" />
+    <Content Include="AdminApp\assets\js\angular-tree-component\dist\directives\tree-drag.directive.metadata.json" />
     <Content Include="AdminApp\assets\js\angular-tree-component\dist\directives\tree-drop.directive.js" />
+    <Content Include="AdminApp\assets\js\angular-tree-component\dist\directives\tree-drop.directive.metadata.json" />
     <Content Include="AdminApp\assets\js\angular-tree-component\dist\models\tree-dragged-element.model.js" />
+    <Content Include="AdminApp\assets\js\angular-tree-component\dist\models\tree-dragged-element.model.metadata.json" />
     <Content Include="AdminApp\assets\js\angular-tree-component\dist\models\tree-node.model.js" />
+    <Content Include="AdminApp\assets\js\angular-tree-component\dist\models\tree-node.model.metadata.json" />
     <Content Include="AdminApp\assets\js\angular-tree-component\dist\models\tree-options.model.js" />
+    <Content Include="AdminApp\assets\js\angular-tree-component\dist\models\tree-options.model.metadata.json" />
     <Content Include="AdminApp\assets\js\angular-tree-component\dist\models\tree-virtual-scroll.model.js" />
+    <Content Include="AdminApp\assets\js\angular-tree-component\dist\models\tree-virtual-scroll.model.metadata.json" />
     <Content Include="AdminApp\assets\js\angular-tree-component\dist\models\tree.model.js" />
+    <Content Include="AdminApp\assets\js\angular-tree-component\dist\models\tree.model.metadata.json" />
     <Content Include="AdminApp\assets\js\angular-tree-component\dist\polyfills.js" />
     <Content Include="AdminApp\assets\js\angular-tree-component\dist\vendor\closest.js" />
+    <Content Include="AdminApp\assets\js\angular-tree-component\LICENSE" />
+    <Content Include="AdminApp\assets\js\angular-tree-component\package.json" />
+    <Content Include="AdminApp\assets\js\angular-tree-component\README.md" />
     <Content Include="AdminApp\assets\js\kendo-editor\kendo.custom.min.js" />
     <Content Include="AdminApp\assets\js\monaco-editor\vs\base\worker\workerMain.js" />
     <Content Include="AdminApp\assets\js\monaco-editor\vs\basic-languages\src\bat.js" />
@@ -885,7 +914,7 @@
     <Content Include="AdminApp\assets\manifest.json" />
     <Content Include="AdminApp\favicon.ico" />
     <Content Include="AdminApp\index.html" />
-    <Content Include="AdminApp\vendors.718620138f92c0682e19.bundle.js" />
+    <Content Include="AdminApp\vendors.28310e3251afc3fee89f.bundle.js" />
     <Content Include="Default.aspx" />
     <Content Include="ResourcePackages\Bootstrap\assets\dist\css\main.css" />
     <Content Include="ResourcePackages\Bootstrap\assets\dist\css\main.min.css" />
@@ -1049,34 +1078,6 @@
     <Folder Include="App_Data\Sitefinity\" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="AdminApp\assets\js\angular-tree-component\CHANGELOG.md" />
-    <Content Include="AdminApp\assets\js\angular-tree-component\dist\angular-tree-component.metadata.json" />
-    <Content Include="AdminApp\assets\js\angular-tree-component\dist\angular-tree-component.umd.js.map" />
-    <Content Include="AdminApp\assets\js\angular-tree-component\dist\components\loading.component.metadata.json" />
-    <Content Include="AdminApp\assets\js\angular-tree-component\dist\components\tree-node-checkbox.component.metadata.json" />
-    <Content Include="AdminApp\assets\js\angular-tree-component\dist\components\tree-node-children.component.metadata.json" />
-    <Content Include="AdminApp\assets\js\angular-tree-component\dist\components\tree-node-collection.component.metadata.json" />
-    <Content Include="AdminApp\assets\js\angular-tree-component\dist\components\tree-node-content.component.metadata.json" />
-    <Content Include="AdminApp\assets\js\angular-tree-component\dist\components\tree-node-drop-slot.component.metadata.json" />
-    <Content Include="AdminApp\assets\js\angular-tree-component\dist\components\tree-node-expander.component.metadata.json" />
-    <Content Include="AdminApp\assets\js\angular-tree-component\dist\components\tree-node-wrapper.component.metadata.json" />
-    <Content Include="AdminApp\assets\js\angular-tree-component\dist\components\tree-node.component.metadata.json" />
-    <Content Include="AdminApp\assets\js\angular-tree-component\dist\components\tree-viewport.component.metadata.json" />
-    <Content Include="AdminApp\assets\js\angular-tree-component\dist\components\tree.component.metadata.json" />
-    <Content Include="AdminApp\assets\js\angular-tree-component\dist\constants\events.metadata.json" />
-    <Content Include="AdminApp\assets\js\angular-tree-component\dist\constants\keys.metadata.json" />
-    <Content Include="AdminApp\assets\js\angular-tree-component\dist\defs\api.metadata.json" />
-    <Content Include="AdminApp\assets\js\angular-tree-component\dist\directives\tree-animate-open.directive.metadata.json" />
-    <Content Include="AdminApp\assets\js\angular-tree-component\dist\directives\tree-drag.directive.metadata.json" />
-    <Content Include="AdminApp\assets\js\angular-tree-component\dist\directives\tree-drop.directive.metadata.json" />
-    <Content Include="AdminApp\assets\js\angular-tree-component\dist\models\tree-dragged-element.model.metadata.json" />
-    <Content Include="AdminApp\assets\js\angular-tree-component\dist\models\tree-node.model.metadata.json" />
-    <Content Include="AdminApp\assets\js\angular-tree-component\dist\models\tree-options.model.metadata.json" />
-    <Content Include="AdminApp\assets\js\angular-tree-component\dist\models\tree-virtual-scroll.model.metadata.json" />
-    <Content Include="AdminApp\assets\js\angular-tree-component\dist\models\tree.model.metadata.json" />
-    <Content Include="AdminApp\assets\js\angular-tree-component\LICENSE" />
-    <Content Include="AdminApp\assets\js\angular-tree-component\package.json" />
-    <Content Include="AdminApp\assets\js\angular-tree-component\README.md" />
     <None Include="App_Data\GeoLocation\GeoLiteCity.dat" />
     <Content Include="packages.config" />
     <Content Include="SampleTemplate.cshtml">
@@ -1240,6 +1241,9 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
+  </ItemGroup>
+  <ItemGroup>
     <TypeScriptCompile Include="AdminApp\assets\js\angular-tree-component\dist\angular-tree-component.d.ts" />
     <TypeScriptCompile Include="AdminApp\assets\js\angular-tree-component\dist\components\loading.component.d.ts" />
     <TypeScriptCompile Include="AdminApp\assets\js\angular-tree-component\dist\components\tree-node-checkbox.component.d.ts" />
@@ -1265,9 +1269,6 @@
     <TypeScriptCompile Include="AdminApp\assets\js\angular-tree-component\dist\models\tree.model.d.ts" />
     <TypeScriptCompile Include="AdminApp\assets\js\angular-tree-component\dist\polyfills.d.ts" />
     <TypeScriptCompile Include="AdminApp\assets\js\angular-tree-component\dist\vendor\closest.d.ts" />
-  </ItemGroup>
-  <ItemGroup>
-    <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets')" />
