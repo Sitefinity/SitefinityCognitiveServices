@@ -2,7 +2,7 @@
 <package>
   <metadata>
     <id>Telerik.Sitefinity.CognitiveServices</id>
-    <version>1.1.0.0</version>
+    <version>1.0.0.0</version>
     <title>Telerik.Sitefinity.CognitiveServices</title>
     <authors>Sitefinity</authors>
     <owners>Sitefinity</owners>
@@ -21,5 +21,6 @@
     <file src="..\..\..\..\App_Data\Sitefinity\Export\CognitiveServices\**\*.ps1" target="tools" />
     <file src="..\..\..\..\App_Data\Sitefinity\Export\CognitiveServices\**\*.psm1" target="tools" />
     <file src="..\..\..\..\bin\Telerik.Sitefinity.CognitiveServices.dll" target="lib\net471" />
+	<file src="text-analysis.extensions.bundle.js" target="content\AdminApp\text-analysis.extensions.bundle.js" />
   </files>
 </package>
