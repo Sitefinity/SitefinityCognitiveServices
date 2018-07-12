@@ -1,0 +1,30 @@
+<div *ngIf="isVisible" class="text-analysis-sidebar">
+    <h2>Text Analysis</h2>
+
+    <div *ngIf="sentiment">
+        <h3 class="-sf-mt-xs">Sentiment</h3>
+        <div>Polarity: <strong>{{sentiment.Polarity}}</strong> ({{sentiment.polarity_confidence * 100 | number:'1.0'}}%)</div>
+        <div>Subjectivity: <strong>{{sentiment.Subjectivity}}</strong> ({{sentiment.subjectivity_confidence * 100 | number:'1.0'}}%)</div>
+    </div>
+
+    <div *ngIf="summary">
+        <h3 class="-sf-mt-xs">Suggested Summary</h3>
+        <div>{{summary}}</div>
+    </div>
+
+    <div *ngIf="hashtags && hashtags.length > 0">
+        <h3 class="-sf-mt-xs">Suggested Hashtags</h3>
+        <div *ngFor="let hashtag of hashtags">
+            {{hashtag}}
+        </div>
+    </div>
+
+    <div *ngIf="categories && categories.length > 0">
+        <h3 class="-sf-mt-xs">Suggested Categories</h3>
+        <div *ngFor="let category of categories">
+            {{category.Label}}
+        </div>
+    </div>
+
+    <button (click)="handleAnalyzeClick($event)" class="sf-button -action -sf-mt-xs">Analyze text</button>
+</div>
