@@ -436,7 +436,7 @@
     <Reference Include="Telerik.DEC.Common.Encryption.Contract, Version=1.0.0.0, Culture=neutral, PublicKeyToken=ca7c0b9c77ee15aa, processorArchitecture=MSIL">
       <HintPath>..\packages\Telerik.Sitefinity.Octopus.2016.1.824.1\lib\net40\Telerik.DEC.Common.Encryption.Contract.dll</HintPath>
     </Reference>
-    <Reference Include="Telerik.DigitalExperienceCloud.Client, Version=2.0.48.6671, Culture=neutral, PublicKeyToken=241a23cf8b6c74c1, processorArchitecture=MSIL">
+    <Reference Include="Telerik.DigitalExperienceCloud.Client">
       <HintPath>..\packages\Telerik.Sitefinity.DigitalExperienceCloudConnector.11.0.6700\lib\net471\Telerik.DigitalExperienceCloud.Client.dll</HintPath>
     </Reference>
     <Reference Include="Telerik.Octopus.Validation, Version=2016.2.824.3, Culture=neutral, PublicKeyToken=563ab8ea49361608, processorArchitecture=MSIL">
@@ -776,7 +776,10 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="AdminApp\app.540ec773dc10757e7231.bundle.js" />
+    <Content Include="AdminApp\app.d4cab320841f6de105ab.bundle.js" />
+    <Content Include="AdminApp\assets\auth\oidc-client.min.js" />
+    <Content Include="AdminApp\assets\auth\silent-renew.html" />
+    <Content Include="AdminApp\assets\auth\silent-renew.js" />
     <Content Include="AdminApp\assets\icons\apple-touch-icon-114x114.png" />
     <Content Include="AdminApp\assets\icons\apple-touch-icon-120x120.png" />
     <Content Include="AdminApp\assets\icons\apple-touch-icon-144x144.png" />
@@ -794,61 +797,6 @@
     <Content Include="AdminApp\assets\icons\mstile-150x150.png" />
     <Content Include="AdminApp\assets\icons\mstile-310x310.png" />
     <Content Include="AdminApp\assets\icons\mstile-70x70.png" />
-    <Content Include="AdminApp\assets\js\angular-tree-component\CHANGELOG.md" />
-    <Content Include="AdminApp\assets\js\angular-tree-component\dist\angular-tree-component.css" />
-    <Content Include="AdminApp\assets\js\angular-tree-component\dist\angular-tree-component.js" />
-    <Content Include="AdminApp\assets\js\angular-tree-component\dist\angular-tree-component.metadata.json" />
-    <Content Include="AdminApp\assets\js\angular-tree-component\dist\angular-tree-component.umd.js" />
-    <Content Include="AdminApp\assets\js\angular-tree-component\dist\angular-tree-component.umd.js.map" />
-    <Content Include="AdminApp\assets\js\angular-tree-component\dist\components\loading.component.js" />
-    <Content Include="AdminApp\assets\js\angular-tree-component\dist\components\loading.component.metadata.json" />
-    <Content Include="AdminApp\assets\js\angular-tree-component\dist\components\tree-node-checkbox.component.js" />
-    <Content Include="AdminApp\assets\js\angular-tree-component\dist\components\tree-node-checkbox.component.metadata.json" />
-    <Content Include="AdminApp\assets\js\angular-tree-component\dist\components\tree-node-children.component.js" />
-    <Content Include="AdminApp\assets\js\angular-tree-component\dist\components\tree-node-children.component.metadata.json" />
-    <Content Include="AdminApp\assets\js\angular-tree-component\dist\components\tree-node-collection.component.js" />
-    <Content Include="AdminApp\assets\js\angular-tree-component\dist\components\tree-node-collection.component.metadata.json" />
-    <Content Include="AdminApp\assets\js\angular-tree-component\dist\components\tree-node-content.component.js" />
-    <Content Include="AdminApp\assets\js\angular-tree-component\dist\components\tree-node-content.component.metadata.json" />
-    <Content Include="AdminApp\assets\js\angular-tree-component\dist\components\tree-node-drop-slot.component.js" />
-    <Content Include="AdminApp\assets\js\angular-tree-component\dist\components\tree-node-drop-slot.component.metadata.json" />
-    <Content Include="AdminApp\assets\js\angular-tree-component\dist\components\tree-node-expander.component.js" />
-    <Content Include="AdminApp\assets\js\angular-tree-component\dist\components\tree-node-expander.component.metadata.json" />
-    <Content Include="AdminApp\assets\js\angular-tree-component\dist\components\tree-node-wrapper.component.js" />
-    <Content Include="AdminApp\assets\js\angular-tree-component\dist\components\tree-node-wrapper.component.metadata.json" />
-    <Content Include="AdminApp\assets\js\angular-tree-component\dist\components\tree-node.component.js" />
-    <Content Include="AdminApp\assets\js\angular-tree-component\dist\components\tree-node.component.metadata.json" />
-    <Content Include="AdminApp\assets\js\angular-tree-component\dist\components\tree-viewport.component.js" />
-    <Content Include="AdminApp\assets\js\angular-tree-component\dist\components\tree-viewport.component.metadata.json" />
-    <Content Include="AdminApp\assets\js\angular-tree-component\dist\components\tree.component.js" />
-    <Content Include="AdminApp\assets\js\angular-tree-component\dist\components\tree.component.metadata.json" />
-    <Content Include="AdminApp\assets\js\angular-tree-component\dist\constants\events.js" />
-    <Content Include="AdminApp\assets\js\angular-tree-component\dist\constants\events.metadata.json" />
-    <Content Include="AdminApp\assets\js\angular-tree-component\dist\constants\keys.js" />
-    <Content Include="AdminApp\assets\js\angular-tree-component\dist\constants\keys.metadata.json" />
-    <Content Include="AdminApp\assets\js\angular-tree-component\dist\defs\api.js" />
-    <Content Include="AdminApp\assets\js\angular-tree-component\dist\defs\api.metadata.json" />
-    <Content Include="AdminApp\assets\js\angular-tree-component\dist\directives\tree-animate-open.directive.js" />
-    <Content Include="AdminApp\assets\js\angular-tree-component\dist\directives\tree-animate-open.directive.metadata.json" />
-    <Content Include="AdminApp\assets\js\angular-tree-component\dist\directives\tree-drag.directive.js" />
-    <Content Include="AdminApp\assets\js\angular-tree-component\dist\directives\tree-drag.directive.metadata.json" />
-    <Content Include="AdminApp\assets\js\angular-tree-component\dist\directives\tree-drop.directive.js" />
-    <Content Include="AdminApp\assets\js\angular-tree-component\dist\directives\tree-drop.directive.metadata.json" />
-    <Content Include="AdminApp\assets\js\angular-tree-component\dist\models\tree-dragged-element.model.js" />
-    <Content Include="AdminApp\assets\js\angular-tree-component\dist\models\tree-dragged-element.model.metadata.json" />
-    <Content Include="AdminApp\assets\js\angular-tree-component\dist\models\tree-node.model.js" />
-    <Content Include="AdminApp\assets\js\angular-tree-component\dist\models\tree-node.model.metadata.json" />
-    <Content Include="AdminApp\assets\js\angular-tree-component\dist\models\tree-options.model.js" />
-    <Content Include="AdminApp\assets\js\angular-tree-component\dist\models\tree-options.model.metadata.json" />
-    <Content Include="AdminApp\assets\js\angular-tree-component\dist\models\tree-virtual-scroll.model.js" />
-    <Content Include="AdminApp\assets\js\angular-tree-component\dist\models\tree-virtual-scroll.model.metadata.json" />
-    <Content Include="AdminApp\assets\js\angular-tree-component\dist\models\tree.model.js" />
-    <Content Include="AdminApp\assets\js\angular-tree-component\dist\models\tree.model.metadata.json" />
-    <Content Include="AdminApp\assets\js\angular-tree-component\dist\polyfills.js" />
-    <Content Include="AdminApp\assets\js\angular-tree-component\dist\vendor\closest.js" />
-    <Content Include="AdminApp\assets\js\angular-tree-component\LICENSE" />
-    <Content Include="AdminApp\assets\js\angular-tree-component\package.json" />
-    <Content Include="AdminApp\assets\js\angular-tree-component\README.md" />
     <Content Include="AdminApp\assets\js\kendo-editor\kendo.custom.min.js" />
     <Content Include="AdminApp\assets\js\monaco-editor\vs\base\worker\workerMain.js" />
     <Content Include="AdminApp\assets\js\monaco-editor\vs\basic-languages\src\bat.js" />
@@ -911,10 +859,9 @@
     <Content Include="AdminApp\assets\js\monaco-editor\vs\language\typescript\src\mode.js" />
     <Content Include="AdminApp\assets\js\monaco-editor\vs\language\typescript\src\worker.js" />
     <Content Include="AdminApp\assets\js\monaco-editor\vs\loader.js" />
-    <Content Include="AdminApp\assets\manifest.json" />
     <Content Include="AdminApp\favicon.ico" />
     <Content Include="AdminApp\index.html" />
-    <Content Include="AdminApp\vendors.28310e3251afc3fee89f.bundle.js" />
+    <Content Include="AdminApp\vendors.68f382d0581caabeebd0.bundle.js" />
     <Content Include="Default.aspx" />
     <Content Include="ResourcePackages\Bootstrap\assets\dist\css\main.css" />
     <Content Include="ResourcePackages\Bootstrap\assets\dist\css\main.min.css" />
@@ -1078,8 +1025,11 @@
     <Folder Include="App_Data\Sitefinity\" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="AdminApp\assets\js\kendo-editor\kendo.custom.min.js.map" />
     <None Include="App_Data\GeoLocation\GeoLiteCity.dat" />
-    <Content Include="packages.config" />
+    <Content Include="packages.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="SampleTemplate.cshtml">
       <Generator>RazorGenerator</Generator>
     </Content>
@@ -1242,33 +1192,6 @@
   </ItemGroup>
   <ItemGroup>
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
-  </ItemGroup>
-  <ItemGroup>
-    <TypeScriptCompile Include="AdminApp\assets\js\angular-tree-component\dist\angular-tree-component.d.ts" />
-    <TypeScriptCompile Include="AdminApp\assets\js\angular-tree-component\dist\components\loading.component.d.ts" />
-    <TypeScriptCompile Include="AdminApp\assets\js\angular-tree-component\dist\components\tree-node-checkbox.component.d.ts" />
-    <TypeScriptCompile Include="AdminApp\assets\js\angular-tree-component\dist\components\tree-node-children.component.d.ts" />
-    <TypeScriptCompile Include="AdminApp\assets\js\angular-tree-component\dist\components\tree-node-collection.component.d.ts" />
-    <TypeScriptCompile Include="AdminApp\assets\js\angular-tree-component\dist\components\tree-node-content.component.d.ts" />
-    <TypeScriptCompile Include="AdminApp\assets\js\angular-tree-component\dist\components\tree-node-drop-slot.component.d.ts" />
-    <TypeScriptCompile Include="AdminApp\assets\js\angular-tree-component\dist\components\tree-node-expander.component.d.ts" />
-    <TypeScriptCompile Include="AdminApp\assets\js\angular-tree-component\dist\components\tree-node-wrapper.component.d.ts" />
-    <TypeScriptCompile Include="AdminApp\assets\js\angular-tree-component\dist\components\tree-node.component.d.ts" />
-    <TypeScriptCompile Include="AdminApp\assets\js\angular-tree-component\dist\components\tree-viewport.component.d.ts" />
-    <TypeScriptCompile Include="AdminApp\assets\js\angular-tree-component\dist\components\tree.component.d.ts" />
-    <TypeScriptCompile Include="AdminApp\assets\js\angular-tree-component\dist\constants\events.d.ts" />
-    <TypeScriptCompile Include="AdminApp\assets\js\angular-tree-component\dist\constants\keys.d.ts" />
-    <TypeScriptCompile Include="AdminApp\assets\js\angular-tree-component\dist\defs\api.d.ts" />
-    <TypeScriptCompile Include="AdminApp\assets\js\angular-tree-component\dist\directives\tree-animate-open.directive.d.ts" />
-    <TypeScriptCompile Include="AdminApp\assets\js\angular-tree-component\dist\directives\tree-drag.directive.d.ts" />
-    <TypeScriptCompile Include="AdminApp\assets\js\angular-tree-component\dist\directives\tree-drop.directive.d.ts" />
-    <TypeScriptCompile Include="AdminApp\assets\js\angular-tree-component\dist\models\tree-dragged-element.model.d.ts" />
-    <TypeScriptCompile Include="AdminApp\assets\js\angular-tree-component\dist\models\tree-node.model.d.ts" />
-    <TypeScriptCompile Include="AdminApp\assets\js\angular-tree-component\dist\models\tree-options.model.d.ts" />
-    <TypeScriptCompile Include="AdminApp\assets\js\angular-tree-component\dist\models\tree-virtual-scroll.model.d.ts" />
-    <TypeScriptCompile Include="AdminApp\assets\js\angular-tree-component\dist\models\tree.model.d.ts" />
-    <TypeScriptCompile Include="AdminApp\assets\js\angular-tree-component\dist\polyfills.d.ts" />
-    <TypeScriptCompile Include="AdminApp\assets\js\angular-tree-component\dist\vendor\closest.d.ts" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets')" />
