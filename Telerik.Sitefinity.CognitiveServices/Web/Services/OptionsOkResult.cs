@@ -12,7 +12,7 @@ namespace Telerik.Sitefinity.CognitiveServices.Web.Services
         {
             HttpResponseMessage response = new HttpResponseMessage(HttpStatusCode.OK);
 
-            response.Headers.Add("Access-Control-Allow-Headers", "authorization,content-type");
+            //response.Headers.Add("Access-Control-Allow-Headers", "authorization,content-type,x-sf-service-request");
 
             return response;
         }
