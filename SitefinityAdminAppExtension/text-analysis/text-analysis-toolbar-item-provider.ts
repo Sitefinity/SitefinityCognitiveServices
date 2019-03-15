@@ -32,7 +32,7 @@ class TextAnalysisToolBarItemProvider implements EditorConfigProvider {
         const TEXT_ANALYSIS_TOOLBAR_ITEM: ToolBarItem = {
             name: "text-analysis",
             tooltip: "Text Analysis",
-            ordinal: 999,
+            ordinal: -1,
             exec: () => {
                 this.textAnalysisComponent.instance.isVisible = !this.textAnalysisComponent.instance.isVisible;
                 this.textAnalysisComponent.changeDetectorRef.detectChanges();

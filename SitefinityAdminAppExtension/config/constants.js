@@ -1,4 +1,4 @@
 module.exports = {
-    extensionsKey: "sample.extensions",
+    extensionsKey: "text-analysis.extensions",
     indexFileName: "__extensions_index.ts"
 }

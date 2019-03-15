@@ -10,12 +10,18 @@
     <div *ngIf="summary">
         <h3 class="-sf-mt-xs">Suggested Summary</h3>
         <div>{{summary}}</div>
+        <button (click)="onAddSummary($event)" class="sf-button -circle -small -sf-mb-4xs -icon ng-star-inserted" title="Select" aria-label="Select categories">
+            <i class="button__icon sf-icon fa fa-plus -size-xs ng-star-inserted"></i>
+        </button>
     </div>
 
     <div *ngIf="hashtags && hashtags.length > 0">
         <h3 class="-sf-mt-xs">Suggested Hashtags</h3>
         <div *ngFor="let hashtag of hashtags">
             {{hashtag}}
+            <button (click)="onAddTag($event, hashtag)" class="sf-button -circle -small -sf-mb-4xs -icon ng-star-inserted" title="Select" aria-label="Select categories">
+                <i class="button__icon sf-icon fa fa-plus -size-xs ng-star-inserted"></i>
+            </button>
         </div>
     </div>
 
@@ -23,8 +29,11 @@
         <h3 class="-sf-mt-xs">Suggested Categories</h3>
         <div *ngFor="let category of categories">
             {{category.Label}}
+            <button (click)="onAddCategory($event, category)" class="sf-button -circle -small -sf-mb-4xs -icon ng-star-inserted" title="Select" aria-label="Select categories">
+                <i class="button__icon sf-icon fa fa-plus -size-xs ng-star-inserted"></i>
+            </button>
         </div>
     </div>
 
-    <button (click)="handleAnalyzeClick($event)" class="sf-button -action -sf-mt-xs">Analyze text</button>
+    <button (click)="onAnalyzeClick()" class="sf-button -action -sf-mt-xs">Analyze text</button>
 </div>
